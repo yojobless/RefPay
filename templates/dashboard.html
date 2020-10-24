@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Dashboard - RefPay</title>
+{% endblock %}
+
+{% block content %}
+<h2>Dashboard</h2>
+<h2>Account Information</h2>
+<div>
+    <table>
+        <tr>
+            <td>Full Name:</td>
+            <td>{{ account['name'] }}</td>
+        </tr>
+        <tr>
+            <td>Username:</td>
+            <td>{{ account['username'] }}</td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>{{ account['password'] }}</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{ account['email'] }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
